@@ -35,40 +35,31 @@ public class Driver {
         sub1.addStudent(s1);
         sub1.addStudent(s2);
         sub1.addStudent(s3);
-      //  System.out.println("Students taking " + sub1 + ":\n"); 
-       // System.out.println(sub1.getStudent() + "\n");
+        sub1.addStudent(s4);
+        sub1.addStudent(s5);
+        sub1.addStudent(s6);
         
         sub2.addStudent(s1);
         sub2.addStudent(s2);
         sub2.addStudent(s3);
         sub2.addStudent(s4);
-       // System.out.println("Students taking " + sub2 + ":\n"); 
-       // System.out.println(sub2.getStudent() + "\n");
-        
+       
         sub3.addStudent(s1);
         sub3.addStudent(s2);
-        sub3.addStudent(s3);
         sub3.addStudent(s4);
         sub3.addStudent(s5);
-        sub3.addStudent(s6);
-       // System.out.println("Students taking " + sub3 + ":\n"); 
-       // System.out.println(sub3.getStudent() + "\n");
         
         sub4.addStudent(s1);
         sub4.addStudent(s2);
         sub4.addStudent(s4);
         sub4.addStudent(s5);
         sub4.addStudent(s6);
-       // System.out.println("Students taking " + sub4 + ":\n"); 
-      //  System.out.println(sub4.getStudent() + "\n");
         
         sub5.addStudent(s2);
         sub5.addStudent(s3);
         sub5.addStudent(s4);
         sub5.addStudent(s5);
         sub5.addStudent(s6);
-        //System.out.println("Students taking " + sub5 + ":\n"); 
-        //System.out.println(sub5.getStudent() + "\n");
         
         Course ECE = new Course("Electronic and Computer Engineering", "BP", new LocalDate(2017,9,05), new LocalDate(2018,5,16));
         
@@ -81,13 +72,12 @@ public class Driver {
        
        System.out.println("Course:\n"); 
        System.out.println(ECE + "\n");
-       System.out.println("Subjects in course:\n"); 
+       System.out.println("Subjects in course:\n");
        System.out.println(ECE.getSubjects() + "\n");
        System.out.println("Students Registered:\n"); 
-       System.out.println(ECE.getStudents() + "\n");
-
-        for (Student i : ECE.getStudents()){
-            System.out.println(i.getStudentUsername());
+      
+        for (Student i : sub1.getStudent()){
+            System.out.println("Name: " + i.getName()  + " Email: "+ i.getStudentUsername() + " DOB:" + i.getDOB() + "\n");
         	
         }
     }
