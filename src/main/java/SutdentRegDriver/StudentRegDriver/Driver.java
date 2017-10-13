@@ -3,10 +3,7 @@ package SutdentRegDriver.StudentRegDriver;
 import StudentRegAssignment.Course;
 import StudentRegAssignment.Student;
 import StudentRegAssignment.Subjects;
-
 import org.joda.time.LocalDate;
-
-
 
 public class Driver {
 
