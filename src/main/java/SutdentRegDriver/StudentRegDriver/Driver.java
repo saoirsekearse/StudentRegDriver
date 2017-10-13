@@ -4,9 +4,6 @@ import StudentRegAssignment.Course;
 import StudentRegAssignment.Student;
 import StudentRegAssignment.Subjects;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import org.joda.time.LocalDate;
 
 
